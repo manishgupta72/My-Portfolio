@@ -235,41 +235,6 @@ const CloseIcon = styled(CloseRounded)`
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
   }
 `;
-const ImageSlider = styled.div`
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 16px;
-  padding-bottom: 16px;
-
-  &::-webkit-scrollbar {
-    height: 8px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: #854ce6;
-    border-radius: 4px;
-  }
-`;
-
-const SlideImage = styled.img`
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 12px;
-  scroll-snap-align: start;
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.5);
-  flex-shrink: 0;
-
-  @media (max-width: 768px) {
-    max-width: 300px;
-  }
-
-  @media (max-width: 480px) {
-    max-width: 240px;
-  }
-`;
 
 const index = ({ openModal, setOpenModal }) => {
   const project = openModal?.project;
